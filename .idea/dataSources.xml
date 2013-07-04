@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="378694315">
+  <component name="DataSourceManagerImpl" format="xml" hash="136822957">
     <data-source source="LOCAL" name="Rails shop: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="2282de1a-f678-4bab-b2c3-b029fcc5283f">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/shop_test</jdbc-url>
@@ -34,6 +34,8 @@
     <data-source source="LOCAL" name="Rails shop: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="76e66e18-f42c-44bb-b3c2-f0b952a43f3d">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/shop_production</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfcfdfc4dfdedfcfdfd8dfdadfd8dfc3dfd9dfcf</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>

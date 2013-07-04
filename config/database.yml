@@ -25,5 +25,7 @@ test:
 production:
   adapter: mysql
   database: shop_production
+  username: root
+  password: enterprise
   pool: 5
   timeout: 5000
