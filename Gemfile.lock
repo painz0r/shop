@@ -101,6 +101,7 @@ GEM
       activesupport (>= 3.0.0)
     arel (4.0.0)
     atomic (1.1.10)
+    bcrypt-ruby (3.0.1)
     bcrypt-ruby (3.0.1-x86-mingw32)
     better_errors (0.9.0)
       coderay (>= 1.0.0)
@@ -162,7 +163,8 @@ GEM
     money (5.1.1)
       i18n (~> 0.6.0)
     multi_json (1.7.7)
-    mysql (2.9.1-x86-mingw32)
+    mysql2 (0.3.11-x86-mingw32)
+    nokogiri (1.5.10)
     nokogiri (1.5.10-x86-mingw32)
     orm_adapter (0.4.0)
     polyamorous (0.6.3)
@@ -240,7 +242,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   meta_request
-  mysql
+  mysql2
   rails (= 4.0.0)
   ransack!
   responders!

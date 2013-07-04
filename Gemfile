@@ -6,12 +6,12 @@ gem 'rails', '4.0.0'
 
 #local db
 group :development do
-  gem 'mysql'
+  gem 'mysql2'
 end
 
 #for heroku
 group :production do
-  gem 'mysql'
+  gem 'mysql2'
 end
 
 
