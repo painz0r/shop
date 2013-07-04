@@ -14,9 +14,9 @@ group :development do
   gem 'mysql2'
 end
 
-#for heroku
+
 group :production do
-  gem 'mysql2'
+  gem 'mysql'
 end
 
 
