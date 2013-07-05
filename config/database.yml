@@ -23,9 +23,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgresql
-  database: shop_test
-  username: root
-  password: enterprise
-  pool: 5
-  timeout: 5000
+  adapter:
+  database:
+  username:
+  password:
+  pool:
+  timeout:

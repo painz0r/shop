@@ -1,6 +1,15 @@
 // Required global settings and mixins for Foundation
 @import "foundation/foundation-global";
 
+
+/* for index page */
+div ul li a.login {
+  margin-left: 35px
+}
+
+div ul li a.logout {
+  margin-left: 20px
+}
 // Settings file to override Foundation variables
 
 // You can find the variables for each component at the bottom of their
