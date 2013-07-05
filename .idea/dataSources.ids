@@ -1895,18 +1895,4 @@
       <index name="index_users_on_reset_password_token" unique="true" columns="reset_password_token"/>
     </table>
   </data-source>
-  <data-source source="LOCAL" name="Rails shop: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="76e66e18-f42c-44bb-b3c2-f0b952a43f3d">
-    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-    <jdbc-url>jdbc:mysql://127.0.0.1/shop_production</jdbc-url>
-    <user-name>root</user-name>
-    <user-password>dfcfdfc4dfdedfcfdfd8dfdadfd8dfc3dfd9dfcf</user-password>
-    <libraries>
-      <library>
-        <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
-      </library>
-      <library>
-        <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>
-      </library>
-    </libraries>
-  </data-source>
 </component>
