@@ -43,7 +43,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 #foundation gems
-gem 'compass-rails' # you need this or you get an err
+#gem 'compass-rails' # you need this or you get an err
 gem 'zurb-foundation', '~> 4.0.0'
 
 group :doc do
