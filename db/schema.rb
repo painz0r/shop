@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130705135638) do
+ActiveRecord::Schema.define(version: 20130705151111) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(version: 20130705135638) do
     t.integer  "cart_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "quantity",   default: 1
   end
 
   create_table "users", force: true do |t|

@@ -111,6 +111,7 @@
                 <div class="panel">
                   <h5><%= item.title %></h5>
                   <h6 class="subheader">$<%= item.price %></h6>
+                  <%= button_to 'Add to Cart' , line_items_path(:item_id => item), :class => 'button small' %>
                   <%= link_to 'Edit', edit_item_path(item) %>
                   <%= link_to 'Destroy', item, method: :delete, data: {confirm: 'Are you sure?'} %>
                 </div>
