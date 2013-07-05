@@ -1,0 +1,17 @@
+class CombineItemsInCart < ActiveRecord::Migration
+  def self.up
+# replace multiple items for a single product in a cart with a single item
+    Cart.all.each do |cart|
+# count the number of each product in the cart
+      sums = cart.line_items.group(:item_id).sum(:quantity)
+      sums.each do |item_id, quantity|
+        if quantity > 1
+# remove individual items
+          cart.line_items.where(:item_id=>item_id).delete_all
+# replace with a single item
+          cart.line_items.create(:item_id=>item_id, :quantity=>quantity)
+        end
+      end
+    end
+  end
+end

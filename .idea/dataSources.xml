@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2637812265">
+  <component name="DataSourceManagerImpl" format="xml" hash="3892695518">
     <data-source source="LOCAL" name="Rails shop: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="2282de1a-f678-4bab-b2c3-b029fcc5283f">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/shop_test</jdbc-url>
@@ -22,20 +22,6 @@
       <jdbc-url>jdbc:mysql://127.0.0.1/shop</jdbc-url>
       <user-name>root</user-name>
       <user-password>dfcfdfc4dfdedfcfdfd8dfdadfd8dfc3dfd9dfcf</user-password>
-      <libraries>
-        <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
-        </library>
-        <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>
-        </library>
-      </libraries>
-    </data-source>
-    <data-source source="LOCAL" name="Rails shop: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="76e66e18-f42c-44bb-b3c2-f0b952a43f3d">
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://&lt;%=ENV['OPENSHIFT_MYSQL_DB_HOST']%&gt;:&lt;%=ENV['OPENSHIFT_MYSQL_DB_PORT']%&gt;/&lt;%=ENV['OPENSHIFT_APP_NAME']%&gt;</jdbc-url>
-      <user-name>&lt;%=ENV['OPENSHIFT_MYSQL_DB_USERNAME']%&gt;</user-name>
-      <user-password>df96df8fdf97dfefdfe4dffcdff1df8ddfe5dffadfefdfe4dff9dfe2dfe3dfecdffedff5dfe7dff3dff9dffbdfe6dff5dfeedfe8dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8fdf94</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>

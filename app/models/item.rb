@@ -5,4 +5,15 @@ class Item < ActiveRecord::Base
   validates :title, :length => {:minimum  => 10,
                                 :message => "should be at least 10 characters long"}
 
+  has_many :line_items
+  before_destroy :ensure_not_referenced_by_any_line_item
+
+  def ensure_not_referenced_by_any_line_item
+    if line_items.count.zero?
+      return true
+    else
+      errors.add(:base, 'Line Items present' )
+      return false
+    end
+  end
 end

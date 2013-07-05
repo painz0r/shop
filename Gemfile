@@ -4,6 +4,7 @@ if RUBY_VERSION =~ /1.9/
 end
 
 source 'http://rubygems.org'
+#for heroku
 ruby '1.9.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -11,7 +12,7 @@ gem 'rails', '4.0.0'
 
 #local db
 group :development do
-  gem 'mysql2'
+  gem 'mysql2', "~>0.3.11"
 end
 
 
@@ -19,7 +20,6 @@ group :production do
   gem 'pg'
 end
 
-gem 'heroku'
 
 
 # Use SCSS for stylesheets
