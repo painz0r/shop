@@ -1872,9 +1872,10 @@
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="description" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
-      <column name="price" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="price" sqlType="DECIMAL" length="8" precision="2" nullable="true" jdbcType="3"/>
       <column name="created_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="image_url" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="line_items" schema="" catalog="shop" type="TABLE">

@@ -7,8 +7,7 @@ class LineItemsController < InheritedResources::Base
 
     respond_to do |format|
       if @line_item.save
-        format.html { redirect_to(@line_item.cart,
-                                  :notice => 'Line item was successfully created.' ) }
+        format.html { redirect_to(@line_item.cart) }
         format.xml { render :xml => @line_item,
                             :status => :created, :location => @line_item }
       else
@@ -16,6 +15,16 @@ class LineItemsController < InheritedResources::Base
         format.xml { render :xml => @line_item.errors,
                             :status => :unprocessable_entity }
       end
+    end
+  end
+
+  def destroy
+    @line_item = LineItem.find(params[:id])
+    @line_item.destroy
+    respond_to do |format|
+      format.html { redirect_to(current_cart,
+                                :notice => 'Your item was deleted' ) }
+      format.xml { head :ok }
     end
   end
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130705151111) do
+ActiveRecord::Schema.define(version: 20130708151229) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -54,9 +54,10 @@ ActiveRecord::Schema.define(version: 20130705151111) do
   create_table "items", force: true do |t|
     t.string   "title"
     t.text     "description"
-    t.integer  "price"
+    t.decimal  "price",       precision: 8, scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_url"
   end
 
   create_table "line_items", force: true do |t|
