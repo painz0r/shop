@@ -5,20 +5,20 @@ end
 
 source 'http://rubygems.org'
 #for heroku
-ruby '1.9.3'
+#ruby '1.9.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
 #local db
 group :development do
-  gem 'mysql2', "~>0.3.11"
+  gem 'mysql2'
 end
 
 
-group :production do
-  gem 'pg'
-end
+#group :production do
+#  gem 'pg'
+#end
 
 
 
