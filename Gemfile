@@ -1,11 +1,7 @@
-if RUBY_VERSION =~ /1.9/
-  Encoding.default_external = Encoding::UTF_8
-  Encoding.default_internal = Encoding::UTF_8
-end
 
-source 'http://rubygems.org'
-#for heroku
-#ruby '1.9.3'
+
+source 'https://rubygems.org'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -14,13 +10,6 @@ gem 'rails', '4.0.0'
 group :development do
   gem 'mysql2'
 end
-
-
-#group :production do
-#  gem 'pg'
-#end
-
-
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -60,6 +49,7 @@ end
 
 gem 'activemerchant'
 
+
 #admin page with active_admin
 gem 'devise',              github: 'plataformatec/devise'
 gem 'responders',          github: 'plataformatec/responders'
@@ -69,7 +59,7 @@ gem 'activeadmin',         github: 'gregbell/active_admin', branch: 'rails4'
 gem 'formtastic',          github: 'justinfrench/formtastic'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'

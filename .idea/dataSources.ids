@@ -1883,6 +1883,7 @@
       <column name="cart_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="created_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="quantity" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" def="MQ=="/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="schema_migrations" schema="" catalog="shop" type="TABLE">
