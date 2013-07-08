@@ -8,11 +8,11 @@ gem 'rails', '4.0.0'
 
 #local db
 group :development do
-  gem 'mysql2'
+  gem 'mysql2', "~>0.3.11"
 end
 
 group :production do
-  gem 'mysql2'
+  gem 'mysql2', "~>0.3.11"
 end
 
 # Use SCSS for stylesheets
