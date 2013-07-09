@@ -1,0 +1,12 @@
+<% if line_item == @current_item %>
+
+    <div class="large-8 columns" id="current_item">
+<% else %>
+    <div class="large-8 columns">
+<% end %>
+<%= line_item.quantity %> &times; <%= line_item.item.title %>
+</div>
+
+<div class="large-4 columns">
+  <%= button_to 'Remove', line_item, :method => :delete, class: 'tiny button', data: {confirm: 'Are you sure?'}, :remote => true %>
+</div>
