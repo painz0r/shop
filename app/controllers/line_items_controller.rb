@@ -28,15 +28,9 @@ class LineItemsController < InheritedResources::Base
       @line_item.destroy
     end
     respond_to do |format|
-      if params[:action] == "index"
-        format.html { redirect_to(root_path,
-                                  :notice => 'Your item was deleted' ) }
+      format.html { redirect_to(root_path,
+                            :notice => 'Your item was deleted' ) }
       format.js
-      else
-      format.html { redirect_to(current_cart,
-                                :notice => 'Your item was deleted' ) }
-      format.js
-      end
       format.xml { head :ok }
     end
   end

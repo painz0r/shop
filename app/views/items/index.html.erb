@@ -83,17 +83,9 @@
       <!-- Side Bar -->
 
       <div class="large-4 small-12 columns">
-
         <img src="http://placehold.it/500x500&text=Logo">
 
-        <div data-alert class="hide-for-small panel alert-box">
-          <h3>Your Shopping Cart</h3>
-          <h5 class="subheader" id="cart">
-            <%= render @cart %>
-          </h5>
-        </div>
-
-        <a href="#">
+        <a href="#" data-reveal-id="myModal">
           <div class="panel callout radius">
             <h6 id="checkout">
               <%= render partial: 'checkout_button' %>
@@ -182,4 +174,11 @@
 
 </div>
 </div>
-
+<div id="myModal" class="reveal-modal large">
+  <div class="hide-for-small panel">
+    <h3>Your Shopping Cart</h3>
+    <h5 class="subheader" id="cart">
+      <%= render @cart %>
+    </h5>
+  </div>
+</div>

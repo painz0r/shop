@@ -2,8 +2,8 @@ class Item < ActiveRecord::Base
   validates :title, :description, :price, :presence => true
   validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
   validates :title, :uniqueness => true
-  validates :title, :length => {:minimum  => 10,
-                                :message => "should be at least 10 characters long"}
+  validates :title, :length => {:minimum  => 5,
+                                :message => "should be at least 5 characters long"}
 
   has_many :line_items
   before_destroy :ensure_not_referenced_by_any_line_item
