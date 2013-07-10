@@ -27,6 +27,10 @@ class LineItemsController < InheritedResources::Base
     else
       @line_item.destroy
     end
+    if @cart.line_items.count.zero?
+      @cart.destroy
+      session[:cart_id] = nil
+    end
     respond_to do |format|
       format.html { redirect_to(root_path,
                             :notice => 'Your item was deleted' ) }
