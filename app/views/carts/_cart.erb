@@ -8,12 +8,20 @@
 </br>
 <div class="row">
   <h4>
-    <div class="large-6 columns">
+    <div class="large-7 columns marginTop">
       Total <%= number_to_currency(@cart.total_price) %>
     </div>
   </h4>
-  <div class="large-5 large-offset-1 columns">
-    <%= button_to 'Empty Cart', @cart, :method => :delete, class: 'small button', data: {confirm: 'Are you sure?'}, :remote => true %>
+  <div class="large-2 columns">
+    <%= button_to 'Empty Cart', @cart, :method => :delete, class: 'small button round', data: {confirm: 'Are you sure?'}, :remote => true %>
+  </div>
+  <div class="large-3 columns">
+    <%= button_to 'Continue Shopping', '#', class: 'small button round', onclick: "$('#mycheckout').foundation('reveal', 'close'); event.preventDefault();" %>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <%= button_to 'Proceed To Checkout', root_path ,class: 'medium success button' %>
   </div>
 </div>
 <%#= link_to 'Edit', edit_cart_path(@cart) %>

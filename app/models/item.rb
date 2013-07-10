@@ -6,6 +6,7 @@ class Item < ActiveRecord::Base
                                 :message => "should be at least 5 characters long"}
 
   has_many :line_items
+  has_many :carts
   before_destroy :ensure_not_referenced_by_any_line_item
 
   def ensure_not_referenced_by_any_line_item

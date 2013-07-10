@@ -10,6 +10,22 @@ div ul li a.login {
 div ul li a.logout {
   margin-left: 20px
 }
+
+.centered {
+  text-align: center;
+}
+
+.marginTop {
+  margin-top: 15px;
+}
+
+.continue-shopping {
+  font-size: 0.80em;
+}
+
+a:hover, a:focus {
+  color: #2795b6;
+}
 // Settings file to override Foundation variables
 
 // You can find the variables for each component at the bottom of their
@@ -1019,3 +1035,6 @@ div ul li a.logout {
 
 
 @import 'foundation';
+@import
+"foundation_icons_general/sass/general_foundicons",
+"foundation_icons_general/sass/general_foundicons_ie7";
