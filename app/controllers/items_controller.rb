@@ -62,6 +62,14 @@ class ItemsController < ApplicationController
     end
   end
 
+  def who_bought
+    @item = Item.find(params[:id])
+    respond_to do |format|
+      format.atom
+      format.xml { render :xml => @item }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item

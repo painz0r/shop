@@ -1,14 +1,22 @@
 Shop::Application.routes.draw do
 
 
+  resources :orders
+
   resources :line_items
 
   resources :carts
 
   devise_for :users
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
   resources :items
+
+  resources :products do
+    get :who_bought, :on => :member
+  end
 
   root to: 'items#index'
 

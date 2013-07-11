@@ -29,7 +29,7 @@ class LineItemsController < InheritedResources::Base
     end
     if @cart.line_items.count.zero?
       @cart.destroy
-      session[:cart_id] = nil
+
     end
     respond_to do |format|
       format.html { redirect_to(root_path,
