@@ -1885,6 +1885,17 @@
       <column name="created_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <column name="quantity" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" def="MQ=="/>
+      <column name="order_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="orders" schema="" catalog="shop" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="address" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="email" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pay_type" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="created_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="schema_migrations" schema="" catalog="shop" type="TABLE">

@@ -77,4 +77,19 @@ Shop::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.default_url_options = { :host => 'http://jackal.shop.c66.me/' }
+
+  Shop::Application.configure do
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+        :address => "smtp.gmail.com" ,
+        :port => 587,
+        :domain => "gmail.com" ,
+        :authentication => "plain" ,
+        :user_name => "rosttestmail@gmail.com" ,
+        :password => "victory12345" ,
+        :enable_starttls_auto => true
+    }
+  end
 end

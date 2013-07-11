@@ -22,8 +22,6 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <div class="row">
       <div class="large-12 columns">
 
@@ -94,7 +92,18 @@
             <!-- End Top Bar -->
           </div>
         </div>
-
+        <% if flash[:notice] %>
+          <div data-alert id="notice" class="hidden alert-box success radius">
+            <%= notice %>
+            <a href="#" class="close">&times;</a>
+          </div>
+        <% end %>
+        <% if flash[:alert] %>
+          <div data-alert id="alert" class="hidden alert-box alert radius">
+            <%= alert %>
+            <a href="#" class="close">&times;</a>
+          </div>
+        <% end %>
     <%= yield %>
 
     <!-- Managed By -->

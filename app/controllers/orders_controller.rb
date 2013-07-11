@@ -46,7 +46,7 @@ class OrdersController < InheritedResources::Base
     @order = Order.find(params[:id])
 
     respond_to do |format|
-      if @order.update_attributes(params[:order])
+      if @order.update(item_params)
         format.html { redirect_to @order, notice: 'Order was successfully updated.' }
         format.json { head :no_content }
       else
@@ -61,14 +61,15 @@ class OrdersController < InheritedResources::Base
   end
 
   def create
-    @order = Order.new(params[:order])
+    @order = Order.new(item_params)
     @order.add_line_items_from_cart(current_cart)
 
     respond_to do |format|
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
-        format.html { redirect_to(store_url,
+        Notifier.order_received(@order).deliver
+        format.html { redirect_to(root_url,
                                   notice: 'Thank you for your order.') }
         format.json { render json: @order, status: :created,
                              location: @order }
@@ -80,5 +81,10 @@ class OrdersController < InheritedResources::Base
     end
   end
 
+  private
+
+  def item_params
+    params.require(:order).permit(:name, :address, :email, :pay_type)
+  end
 
 end
