@@ -1,176 +1,60 @@
 <div class="row">
-  <div class="large-12 columns">
+  <div class="small-4 columns">
+    <a href="#" data-reveal-id="mycheckout">
+      <div class="panel callout radius">
+        <h6 id="checkout" class="centered blink">
+          <%= render partial: 'checkout_button' %>
+        </h6>
+      </div>
+    </a>
+  </div>
+  <div class="small-4 small-offset-4 columns">
+    <ul class="button-group even-1">
+      <li><%= render 'devise/menu/registration_items' %></li>
+      <li><%= render 'devise/menu/login_items' %></li>
+    </ul>
+  </div>
+</div>
+<!-- End Navigation -->
 
-    <!-- Navigation -->
+<div class="row">
 
+  <!-- Side Bar -->
+
+  <div class="large-4 small-12 columns">
+    <img src="http://placehold.it/500x500&text=Logo">
+  </div>
+
+  <!-- End Side Bar -->
+  <div class="large-8 columns">
     <div class="row">
-      <div class="large-12 columns">
+      <% @items.each do |item| %>
+          <div class="large-4 small-6 columns">
+            <a class="th radius" href="#">
+              <img src="http://placehold.it/1000x1000&text=Thumbnail">
+            </a>
 
-        <nav class="top-bar">
-          <ul class="title-area">
-            <!-- Title Area -->
-            <li class="name">
-              <h1>
-                <a href="#">
-                  Top Bar Title
-                </a>
-              </h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-          </ul>
-
-          <section class="top-bar-section">
-            <!-- Right Nav Section -->
-            <ul class="right">
-              <li class="divider"></li>
-              <li class="has-dropdown">
-                <a href="#">Main Item 1</a>
-                <ul class="dropdown">
-                  <li><label>Section Name</label></li>
-                  <li class="has-dropdown">
-                    <a href="#" class="">Has Dropdown, Level 1</a>
-                    <ul class="dropdown">
-                      <li><a href="#">Dropdown Options</a></li>
-                      <li><a href="#">Dropdown Options</a></li>
-                      <li><a href="#">Level 2</a></li>
-                      <li><a href="#">Subdropdown Option</a></li>
-                      <li><a href="#">Subdropdown Option</a></li>
-                      <li><a href="#">Subdropdown Option</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Dropdown Option</a></li>
-                  <li><a href="#">Dropdown Option</a></li>
-                  <li class="divider"></li>
-                  <li><label>Section Name</label></li>
-                  <li><a href="#">Dropdown Option</a></li>
-                  <li><a href="#">Dropdown Option</a></li>
-                  <li><a href="#">Dropdown Option</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">See all &rarr;</a></li>
-                </ul>
-              </li>
-              <li class="divider"></li>
-              <li><a href="#">Main Item 2</a></li>
-              <li class="divider"></li>
-              <li class="has-dropdown">
-                <a href="#">Main Item 3</a>
-                <ul class="dropdown">
-                  <li><a href="#">Dropdown Option</a></li>
-                  <li><a href="#">Dropdown Option</a></li>
-                  <li><a href="#">Dropdown Option</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">See all &rarr;</a></li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-        </nav>
-        <!-- End Top Bar -->
-      </div>
-    </div>
-    <div class="row">
-      <div class="small-4 columns">
-      <a href="#" data-reveal-id="mycheckout">
-        <div class="panel callout radius">
-          <h6 id="checkout" class="centered blink">
-            <%= render partial: 'checkout_button' %>
-          </h6>
-        </div>
-      </a>
-      </div>
-      <div class="small-4 small-offset-4 columns">
-        <ul class="button-group even-1">
-          <li><%= render 'devise/menu/registration_items' %></li>
-          <li><%= render 'devise/menu/login_items' %></li>
-        </ul>
-      </div>
-    </div>
-    <!-- End Navigation -->
-
-    <div class="row">
-
-      <!-- Side Bar -->
-
-      <div class="large-4 small-12 columns">
-        <img src="http://placehold.it/500x500&text=Logo">
-      </div>
-
-      <!-- End Side Bar -->
-      <div class="large-8 columns">
-        <div class="row">
-          <% @items.each do |item| %>
-              <div class="large-4 small-6 columns">
-                <a class="th radius" href="#">
-                  <img src="http://placehold.it/1000x1000&text=Thumbnail">
-                </a>
-                <div class="panel">
-                  <h5><%= item.title %></h5>
-                  <h6 class="subheader"><%= number_to_currency(item.price) %></h6>
-                  <%= button_to 'Add to Cart', line_items_path(:item_id => item), :class => 'button small', :remote => true %>
-                  <%= link_to 'Edit', edit_item_path(item) %>
-                  <%= link_to 'Destroy', item, method: :delete, data: {confirm: 'Are you sure?'} %>
-                </div>
-              </div>
-          <% end %>
-          <div class="large-12 columns">
-            <ul class="inline-list right">
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>
-              <li><a href="#">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Managed By -->
-      <div class="row">
-        <div class="large-12 columns">
-          <%= link_to 'New Item', new_item_path %>
-          <div class="panel">
-            <div class="row">
-
-              <div class="large-2 small-6 columns">
-                <img src="http://placehold.it/300x300&text=Site Owner">
-              </div>
-
-              <div class="large-10 small-6 columns">
-                <strong>This Site Is Managed By
-                  <hr/>
-                </strong>
-
-                Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum
-                odio
-                ornare sagittis
-              </div>
-
+            <div class="panel">
+              <h5><%= item.title %></h5>
+              <h6 class="subheader"><%= number_to_currency(item.price) %></h6>
+              <%= button_to 'Add to Cart', line_items_path(:item_id => item), :class => 'button small', :remote => true %>
+              <%= link_to 'Edit', edit_item_path(item) %>
+              <%= link_to 'Destroy', item, method: :delete, data: {confirm: 'Are you sure?'} %>
             </div>
           </div>
-        </div>
-
-        <!-- End Managed By -->
-
+      <% end %>
+      <div class="large-12 columns">
+        <ul class="inline-list right">
+          <li><%= link_to 'New Item', new_item_path %></li>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
       </div>
     </div>
   </div>
 
-
-  <!-- Footer -->
-
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr/>
-      <div class="row">
-
-        <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-  <!-- End Footer -->
 
   <!-- Checkout -->
 

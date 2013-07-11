@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55f3d95-17f0-4a7f-900b-ca6586218e49" name="Default" comment="modified cart">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/foundation_icons_general/sass/fonts/general_foundicons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/foundation_icons_general/sass/fonts/general_foundicons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/foundation_icons_general/sass/fonts/general_foundicons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/foundation_icons_general/sass/fonts/general_foundicons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/carts/_cart.erb" afterPath="$PROJECT_DIR$/app/views/carts/_cart.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/line_items/_line_item.erb" afterPath="$PROJECT_DIR$/app/views/line_items/_line_item.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/index.html.erb" afterPath="$PROJECT_DIR$/app/views/items/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373527546069" ignored="false" />
     <file path="/a.dummy" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373541272949" ignored="false" />
     <file path="/Ruby Console" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1372932217668" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373544389505" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="47" selection-start="867" selection-end="867" vertical-scroll-proportion="-8.777778">
+            <state line="95" column="14" selection-start="3895" selection-end="3895" vertical-scroll-proportion="0.5359116">
               <folding />
             </state>
           </provider>
@@ -98,7 +92,7 @@
       <file leaf-file-name="_line_item.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="27" selection-start="213" selection-end="213" vertical-scroll-proportion="-4.6666665">
+            <state line="20" column="21" selection-start="714" selection-end="714" vertical-scroll-proportion="-13.333333">
               <folding>
                 <marker date="1373543351045" expanded="true" signature="549:698" placeholder="..." />
               </folding>
@@ -106,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="47" selection-start="5748" selection-end="5748" vertical-scroll-proportion="0.46961325">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="31.88889">
               <folding />
             </state>
           </provider>
@@ -146,7 +140,6 @@
         <option value="$PROJECT_DIR$/app/views/items/who_bought.rb" />
         <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/orders/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/line_items/destroy.coffee" />
         <option value="$PROJECT_DIR$/app/views/carts/_cart.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/foundation_icons_general/sass/_settings.scss" />
@@ -154,6 +147,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss" />
         <option value="$PROJECT_DIR$/app/views/line_items/_line_item.erb" />
         <option value="$PROJECT_DIR$/app/views/items/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -1158,13 +1152,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="47" selection-start="867" selection-end="867" vertical-scroll-proportion="-8.777778">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/carts/destroy.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="117" selection-end="151" vertical-scroll-proportion="0.0">
@@ -1244,7 +1231,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="213" selection-end="213" vertical-scroll-proportion="-4.6666665">
+        <state line="20" column="21" selection-start="714" selection-end="714" vertical-scroll-proportion="-13.333333">
           <folding>
             <marker date="1373543351045" expanded="true" signature="549:698" placeholder="..." />
           </folding>
@@ -1253,7 +1240,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="47" selection-start="5748" selection-end="5748" vertical-scroll-proportion="0.46961325">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="31.88889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="14" selection-start="3895" selection-end="3895" vertical-scroll-proportion="0.5359116">
           <folding />
         </state>
       </provider>
