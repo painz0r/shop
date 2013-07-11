@@ -26,6 +26,10 @@ div ul li a.logout {
 a:hover, a:focus {
   color: #2795b6;
 }
+
+.item-margin {
+  margin-top: 20px;
+}
 // Settings file to override Foundation variables
 
 // You can find the variables for each component at the bottom of their
@@ -1037,4 +1041,5 @@ a:hover, a:focus {
 @import 'foundation';
 @import
 "foundation_icons_general/sass/general_foundicons",
+"foundation_icons_general/sass/settings",
 "foundation_icons_general/sass/general_foundicons_ie7";
