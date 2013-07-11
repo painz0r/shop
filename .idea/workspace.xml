@@ -2,45 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55f3d95-17f0-4a7f-900b-ca6586218e49" name="Default" comment="modified cart">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/.sass-cache/6e921d17dabf1f492bd178102bc1a8a4322f1198/_settings.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/fonts/general_foundicons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/.sass-cache/6e921d17dabf1f492bd178102bc1a8a4322f1198/general_foundicons.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/fonts/general_foundicons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/fonts/general_foundicons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/.sass-cache/6e921d17dabf1f492bd178102bc1a8a4322f1198/general_foundicons_ie7.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/sass/_settings.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/.sass-cache/6e921d17dabf1f492bd178102bc1a8a4322f1198/accessibility_foundicons.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/.sass-cache/6e921d17dabf1f492bd178102bc1a8a4322f1198/accessibility_foundicons_ie7.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/general.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/sass/general_foundicons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/fonts/general_foundicons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/sass/general_foundicons_ie7.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/general_js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/items/who_bought.rb" />
-      <change type="MOVED" beforePath="C:\Users\rostyslav.kovtun\RubymineProjects\shop\app\assets\stylesheets\foundation_icons_general\stylesheets\general_foundicons.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/stylesheets/general_foundicons.css" />
-      <change type="MOVED" beforePath="C:\Users\rostyslav.kovtun\RubymineProjects\shop\app\assets\stylesheets\foundation_icons_general\stylesheets\general_foundicons_ie7.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation_icons_general/stylesheets/general_foundicons_ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/carts/_cart.erb" afterPath="$PROJECT_DIR$/app/views/carts/_cart.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/cart.rb" afterPath="$PROJECT_DIR$/app/models/cart.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/carts/destroy.coffee" afterPath="$PROJECT_DIR$/app/views/carts/destroy.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/line_items/destroy.coffee" afterPath="$PROJECT_DIR$/app/views/line_items/destroy.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/item.rb" afterPath="$PROJECT_DIR$/app/models/item.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/items_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/line_item.rb" afterPath="$PROJECT_DIR$/app/models/line_item.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/line_items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/line_items_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/shop.iml" afterPath="$PROJECT_DIR$/.idea/shop.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/index.html.erb" afterPath="$PROJECT_DIR$/app/views/items/index.html.erb" />
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373527546069" ignored="false" />
     <file path="/a.dummy" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373534166316" ignored="false" />
     <file path="/Ruby Console" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1372932217668" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373539996156" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,15 +61,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="destroy.coffee" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/line_items/destroy.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.031578947">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="items_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -128,15 +88,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="destroy.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/carts/destroy.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="117" selection-end="151" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_line_item.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -146,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="109.22222">
+            <state line="178" column="46" selection-start="5747" selection-end="5747" vertical-scroll-proportion="0.46961325">
               <folding />
             </state>
           </provider>
@@ -178,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/carts.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/orders/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/carts/_cart.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -194,6 +144,7 @@
         <option value="$PROJECT_DIR$/app/views/orders/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/line_items/destroy.coffee" />
+        <option value="$PROJECT_DIR$/app/views/items/index.html.erb" />
       </list>
     </option>
   </component>
@@ -1184,20 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="48" selection-start="676" selection-end="676" vertical-scroll-proportion="-12.666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="109.22222">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/ba4bee8/f6d82dae-069d-4890-9b4a-c8efebc1538f/shop..carts">
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
@@ -1246,13 +1183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/cart.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/carts/destroy.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="117" selection-end="151" vertical-scroll-proportion="0.0">
@@ -1263,6 +1193,27 @@
     <entry file="file://$PROJECT_DIR$/app/views/line_items/destroy.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.031578947">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/cart.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="48" selection-start="676" selection-end="676" vertical-scroll-proportion="-12.666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="46" selection-start="5747" selection-end="5747" vertical-scroll-proportion="0.46961325">
           <folding />
         </state>
       </provider>
