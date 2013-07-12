@@ -4,8 +4,8 @@
     <data-source source="LOCAL" name="Rails shop: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="2282de1a-f678-4bab-b2c3-b029fcc5283f">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/shop_test</jdbc-url>
-      <user-name>root</user-name>
-      <user-password>dfcfdfc4dfdedfcfdfd8dfdadfd8dfc3dfd9dfcf</user-password>
+      <user-name>&lt;%= ENV[&quot;MYSQL_USERNAME&quot;] %&gt;</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df88dfe7dff3dff9dffbdfe6dff5dffadfebdff9dff9dffddfe5dff8dfeedf88dff7df8adf8fdf94</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
@@ -20,8 +20,8 @@
       <identifier-quote-string>`</identifier-quote-string>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/shop</jdbc-url>
-      <user-name>root</user-name>
-      <user-password>dfcfdfc4dfdedfcfdfd8dfdadfd8dfc3dfd9dfcf</user-password>
+      <user-name>&lt;%= ENV[&quot;MYSQL_USERNAME&quot;] %&gt;</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df88dfe7dff3dff9dffbdfe6dff5dffadfebdff9dff9dffddfe5dff8dfeedf88dff7df8adf8fdf94</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
@@ -34,8 +34,8 @@
     <data-source source="LOCAL" name="Rails shop: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="fc7817db-505c-4703-ad36-1f828423dd79">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/shop_production</jdbc-url>
-      <user-name>root</user-name>
-      <user-password>dfcfdfc4dfdedfcfdfd8dfdadfd8dfc3dfd9dfcf</user-password>
+      <user-name>ENV[&quot;MYSQL_USERNAME&quot;]</user-name>
+      <user-password>dfefdfe4dffcdff1df88dfe7dff3dff9dffbdfe6dff5dffadfebdff9dff9dffddfe5dff8dfeedf88dff7</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
