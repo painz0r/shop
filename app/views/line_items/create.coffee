@@ -20,4 +20,4 @@ $('.blink').css("color", "#7cf404")
 $.gritter.add
   title: "<%= j @addMessage %>"
   text: " "
-  image: "assets/images/shopping-cart-icon.png"
+  image: "<%= asset_path('shopping-cart-icon.png') %>"

@@ -37,9 +37,9 @@
       <file leaf-file-name="create.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/line_items/create.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="24" selection-start="467" selection-end="467" vertical-scroll-proportion="0.68989545">
+            <state line="22" column="53" selection-start="496" selection-end="496" vertical-scroll-proportion="0.68989545">
               <folding>
-                <marker date="1373646178077" expanded="true" signature="401:442" placeholder="title: &quot;&lt;%= j @addMessage %&gt;&quot;..." />
+                <marker date="1373646620721" expanded="true" signature="401:442" placeholder="title: &quot;&lt;%= j @addMessage %&gt;&quot;..." />
               </folding>
             </state>
           </provider>
@@ -1225,9 +1225,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/line_items/create.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="24" selection-start="467" selection-end="467" vertical-scroll-proportion="0.68989545">
+        <state line="22" column="53" selection-start="496" selection-end="496" vertical-scroll-proportion="0.68989545">
           <folding>
-            <marker date="1373646178077" expanded="true" signature="401:442" placeholder="title: &quot;&lt;%= j @addMessage %&gt;&quot;..." />
+            <marker date="1373646620721" expanded="true" signature="401:442" placeholder="title: &quot;&lt;%= j @addMessage %&gt;&quot;..." />
           </folding>
         </state>
       </provider>
