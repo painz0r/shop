@@ -136,6 +136,7 @@ GEM
       bundler (~> 1.0)
       rails (>= 3, < 5)
     fssm (0.2.10)
+    gritter (1.0.3)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -246,6 +247,7 @@ DEPENDENCIES
   devise!
   figaro
   formtastic!
+  gritter
   inherited_resources!
   jbuilder (~> 1.2)
   jquery-rails

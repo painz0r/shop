@@ -1,7 +1,8 @@
 <div class="row">
   <div class="small-4 columns">
     <a href="#" data-reveal-id="mycheckout">
-      <div class="panel callout radius">
+      <div data-tooltip data-options="disable-for-touch:true" data-width="13%"
+           title="This is your shopping cart. All items you add will appear here. Click to open!" class="panel callout radius has-tip">
         <h6 id="checkout" class="centered blink">
           <%= render partial: 'checkout_button' %>
         </h6>
@@ -9,7 +10,7 @@
     </a>
   </div>
   <div class="small-4 small-offset-4 columns">
-    <ul class="button-group even-1">
+    <ul class="button-group even-1 radius">
       <li><%= render 'devise/menu/registration_items' %></li>
       <li><%= render 'devise/menu/login_items' %></li>
     </ul>
@@ -37,7 +38,7 @@
             <div class="panel">
               <h5><%= item.title %></h5>
               <h6 class="subheader"><%= number_to_currency(item.price) %></h6>
-              <%= button_to 'Add to Cart', line_items_path(:item_id => item), :class => 'button small', :remote => true %>
+              <%= button_to 'Add to Cart', line_items_path(:item_id => item), :class => 'button small radius', :remote => true %>
               <%= link_to 'Edit', edit_item_path(item) %>
               <%= link_to 'Destroy', item, method: :delete, data: {confirm: 'Are you sure?'} %>
             </div>
@@ -45,11 +46,14 @@
       <% end %>
       <div class="large-12 columns">
         <ul class="inline-list right">
-          <li><%= link_to 'New Item', new_item_path %></li>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
+
+
+          <ul class="pagination">
+
+            <%= will_paginate @orders %></li>
+
+
+          </ul>
         </ul>
       </div>
     </div>

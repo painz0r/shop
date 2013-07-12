@@ -1,10 +1,10 @@
 class LineItemsController < InheritedResources::Base
 
   def create
+    @addMessage = 'Item added to your cart'
     @cart = current_cart
     item = Item.find(params[:item_id])
     @line_item = @cart.add_item(item.id)
-
     respond_to do |format|
       if @line_item.save
         format.html { redirect_to(root_url) }

@@ -71,6 +71,9 @@ gem 'will_paginate'
 #for env variables
 gem 'figaro'
 
+#for instant popup animations
+gem 'gritter'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

@@ -6,6 +6,8 @@ class ItemsController < ApplicationController
   def index
     @items = Item.all
     @cart = current_cart
+    @items = Item.paginate page: params[:page],
+                             order: "created_at desc", per_page: 6
   end
 
   # GET /items/1

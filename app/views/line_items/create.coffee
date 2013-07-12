@@ -16,3 +16,8 @@ blink = ->
 blink()
 
 $('.blink').css("color", "#7cf404")
+
+$.gritter.add
+  title: "<%= j @addMessage %>"
+  text: " "
+  image: "assets/shopping-cart-icon.png"

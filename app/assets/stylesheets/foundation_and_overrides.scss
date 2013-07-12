@@ -34,6 +34,16 @@ a:hover, a:focus {
 .hidden {
   display: none;
 }
+
+/*for gritter popup animation */
+.gritter-item.gritter-css3 {
+  @extend .centered;
+  background: #2aa6ca;
+  color: white;
+}
+.gritter-title {
+  margin-top: 15px;
+}
 // Settings file to override Foundation variables
 
 // You can find the variables for each component at the bottom of their
