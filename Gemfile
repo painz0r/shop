@@ -65,7 +65,11 @@ gem 'formtastic',          github: 'justinfrench/formtastic'
 # Use ActiveModel has_secure_password
  gem 'bcrypt-ruby', '~> 3.0.0'
 
+#for pagination
 gem 'will_paginate'
+
+#for env variables
+gem 'figaro'
 
 # Use unicorn as the app server
 # gem 'unicorn'

@@ -2,8 +2,8 @@
 development:
   adapter: mysql2
   database: shop
-  username: root
-  password: enterprise
+  username: <%= ENV["MYSQL_USERNAME"] %>
+  password: <%= ENV["MYSQL_PASSWORD"] %>
   pool: 5
   timeout: 5000
 
@@ -13,15 +13,15 @@ development:
 test:
   adapter: mysql2
   database: shop_test
-  username: root
-  password: enterprise
+  username: <%= ENV["MYSQL_USERNAME"] %>
+  password: <%= ENV["MYSQL_PASSWORD"] %>
   pool: 5
   timeout: 5000
 
 production:
   adapter: mysql2
   database: shop_production
-  username: root
-  password: enterprise
+  username: <%= ENV["MYSQL_USERNAME"] %>
+  password: <%= ENV["MYSQL_PASSWORD"] %>
   pool:
   timeout:
