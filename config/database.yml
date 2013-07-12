@@ -22,6 +22,6 @@ production:
   adapter: mysql2
   database: shop_production
   username: <%= ENV["MYSQL_USERNAME"] %>
-  password: enterprise
+  password: <%= ENV["MYSQL_PASSWORD"] %>
   pool:
   timeout:
