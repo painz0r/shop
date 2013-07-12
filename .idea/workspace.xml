@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55f3d95-17f0-4a7f-900b-ca6586218e49" name="Default" comment="modified cart">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.yml" afterPath="$PROJECT_DIR$/config/application.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
     </list>
     <ignored path="shop.iws" />
@@ -49,7 +49,7 @@
       <file leaf-file-name="application.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="16" selection-start="36" selection-end="36" vertical-scroll-proportion="0.031358887">
+            <state line="1" column="14" selection-start="35" selection-end="35" vertical-scroll-proportion="0.031358887">
               <folding />
             </state>
           </provider>
@@ -58,7 +58,7 @@
       <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="12" selection-start="574" selection-end="578" vertical-scroll-proportion="0.0">
+            <state line="24" column="35" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1236,14 +1236,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="574" selection-end="578" vertical-scroll-proportion="0.0">
+        <state line="24" column="35" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="16" selection-start="36" selection-end="36" vertical-scroll-proportion="0.031358887">
+        <state line="1" column="14" selection-start="35" selection-end="35" vertical-scroll-proportion="0.031358887">
           <folding />
         </state>
       </provider>
