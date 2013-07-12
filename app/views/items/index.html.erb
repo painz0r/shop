@@ -45,6 +45,7 @@
           </div>
       <% end %>
       <div class="large-12 columns">
+        <li><%= link_to 'New Item', new_item_path %></li>
         <ul class="inline-list right">
           <ul class="pagination">
             <%= will_paginate @orders %></li>
@@ -58,8 +59,8 @@
   <!-- Checkout -->
 
 </div>
-</div>
-<div id="mycheckout" class="reveal-modal medium">
+
+<div id="mycheckout" class="reveal-modal exlarge">
   <div class="hide-for-small panel">
     <h3 class="centered">Your Shopping Cart</h3>
     </br>
