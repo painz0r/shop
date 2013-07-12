@@ -1,8 +1,7 @@
 <div class="row">
   <div class="small-4 columns">
     <a href="#" data-reveal-id="mycheckout">
-      <div data-tooltip data-options="disable-for-touch:true" data-width="13%"
-           title="This is your shopping cart. All items you add will appear here. Click to open!" class="panel callout radius has-tip">
+      <div class="panel callout radius">
         <h6 id="checkout" class="centered blink">
           <%= render partial: 'checkout_button' %>
         </h6>
@@ -56,18 +55,5 @@
   </div>
 
 
-  <!-- Checkout -->
-
 </div>
 
-<div id="mycheckout" class="reveal-modal exlarge">
-  <div class="hide-for-small panel">
-    <h3 class="centered">Your Shopping Cart</h3>
-    </br>
-    <h5 class="subheader" id="cart">
-      <%= render @cart %>
-    </h5>
-  </div>
-</div>
-
-<!--End of Checkout -->
