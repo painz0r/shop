@@ -57,6 +57,33 @@ batch_action_admin_admin_users POST       /admin/admin_users/batch_action(.:form
                                PUT        /admin/admin_users/:id(.:format)          admin/admin_users#update
                                DELETE     /admin/admin_users/:id(.:format)          admin/admin_users#destroy
                admin_dashboard GET        /admin/dashboard(.:format)                admin/dashboard#index
+      batch_action_admin_items POST       /admin/items/batch_action(.:format)       admin/items#batch_action
+                   admin_items GET        /admin/items(.:format)                    admin/items#index
+                               POST       /admin/items(.:format)                    admin/items#create
+                new_admin_item GET        /admin/items/new(.:format)                admin/items#new
+               edit_admin_item GET        /admin/items/:id/edit(.:format)           admin/items#edit
+                    admin_item GET        /admin/items/:id(.:format)                admin/items#show
+                               PATCH      /admin/items/:id(.:format)                admin/items#update
+                               PUT        /admin/items/:id(.:format)                admin/items#update
+                               DELETE     /admin/items/:id(.:format)                admin/items#destroy
+     batch_action_admin_orders POST       /admin/orders/batch_action(.:format)      admin/orders#batch_action
+                  admin_orders GET        /admin/orders(.:format)                   admin/orders#index
+                               POST       /admin/orders(.:format)                   admin/orders#create
+               new_admin_order GET        /admin/orders/new(.:format)               admin/orders#new
+              edit_admin_order GET        /admin/orders/:id/edit(.:format)          admin/orders#edit
+                   admin_order GET        /admin/orders/:id(.:format)               admin/orders#show
+                               PATCH      /admin/orders/:id(.:format)               admin/orders#update
+                               PUT        /admin/orders/:id(.:format)               admin/orders#update
+                               DELETE     /admin/orders/:id(.:format)               admin/orders#destroy
+      batch_action_admin_users POST       /admin/users/batch_action(.:format)       admin/users#batch_action
+                   admin_users GET        /admin/users(.:format)                    admin/users#index
+                               POST       /admin/users(.:format)                    admin/users#create
+                new_admin_user GET        /admin/users/new(.:format)                admin/users#new
+               edit_admin_user GET        /admin/users/:id/edit(.:format)           admin/users#edit
+                    admin_user GET        /admin/users/:id(.:format)                admin/users#show
+                               PATCH      /admin/users/:id(.:format)                admin/users#update
+                               PUT        /admin/users/:id(.:format)                admin/users#update
+                               DELETE     /admin/users/:id(.:format)                admin/users#destroy
    batch_action_admin_comments POST       /admin/comments/batch_action(.:format)    admin/comments#batch_action
                 admin_comments GET        /admin/comments(.:format)                 admin/comments#index
                                POST       /admin/comments(.:format)                 admin/comments#create
@@ -69,13 +96,13 @@ batch_action_admin_admin_users POST       /admin/admin_users/batch_action(.:form
                                PATCH      /items/:id(.:format)                      items#update
                                PUT        /items/:id(.:format)                      items#update
                                DELETE     /items/:id(.:format)                      items#destroy
-            who_bought_product GET        /products/:id/who_bought(.:format)        products#who_bought
-                      products GET        /products(.:format)                       products#index
-                               POST       /products(.:format)                       products#create
-                   new_product GET        /products/new(.:format)                   products#new
-                  edit_product GET        /products/:id/edit(.:format)              products#edit
-                       product GET        /products/:id(.:format)                   products#show
-                               PATCH      /products/:id(.:format)                   products#update
-                               PUT        /products/:id(.:format)                   products#update
-                               DELETE     /products/:id(.:format)                   products#destroy
+               who_bought_item GET        /items/:id/who_bought(.:format)           items#who_bought
+                               GET        /items(.:format)                          items#index
+                               POST       /items(.:format)                          items#create
+                               GET        /items/new(.:format)                      items#new
+                               GET        /items/:id/edit(.:format)                 items#edit
+                               GET        /items/:id(.:format)                      items#show
+                               PATCH      /items/:id(.:format)                      items#update
+                               PUT        /items/:id(.:format)                      items#update
+                               DELETE     /items/:id(.:format)                      items#destroy
                           root GET        /                                         items#index
