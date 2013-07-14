@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55f3d95-17f0-4a7f-900b-ca6586218e49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/jquery.syncHeight.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/index.html.erb" afterPath="$PROJECT_DIR$/app/views/items/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373839094625" ignored="false" />
+    <file path="/Dummy.txt" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373840910657" ignored="false" />
     <file path="/a.dummy" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373803427081" ignored="false" />
     <file path="/Ruby Console" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373738515085" ignored="false" />
     <file path="/application.yml" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373643616509" ignored="false" />
@@ -15,7 +18,7 @@
     <file path="/Gemfile.lock" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373739985613" ignored="false" />
     <file path="/routes.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373740218409" ignored="false" />
     <file path="/Gemfile" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373743143731" ignored="false" />
-    <file path="/index.html.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373829913086" ignored="false" />
+    <file path="/index.html.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373843645900" ignored="false" />
     <file path="/_login_items.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373815374045" ignored="false" />
     <file path="/_registration_items.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373747369068" ignored="false" />
     <file path="/new.html.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373816298017" ignored="false" />
@@ -39,7 +42,7 @@
     <file path="/carts_helper.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373806010951" ignored="false" />
     <file path="/_form.html.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373818692359" ignored="false" />
     <file path="/_links.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373808813920" ignored="false" />
-    <file path="/application.html.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373840712558" ignored="false" />
+    <file path="/application.html.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373842138139" ignored="false" />
     <file path="/devise.en.yml" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373819474214" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,25 +71,25 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="50" column="0" selection-start="1564" selection-end="1564" vertical-scroll-proportion="-32.692307">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="52" selection-start="5473" selection-end="5473" vertical-scroll-proportion="0.75935286">
+            <state line="13" column="72" selection-start="633" selection-end="633" vertical-scroll-proportion="-8.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="708" selection-end="756" vertical-scroll-proportion="0.0">
+            <state line="32" column="3" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.5359606">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -160,11 +163,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20130713212631_add_details_to_user.rb" />
         <option value="$PROJECT_DIR$/config/locales/devise.en.yml" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/items/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/carts/_cart.erb" />
         <option value="$PROJECT_DIR$/app/views/line_items/_line_item.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/items/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -237,6 +240,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -388,6 +409,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -409,18 +452,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ross\RubymineProjects\shop\app\assets\javascripts" />
       <recent name="C:\Users\rostyslav.kovtun\RubymineProjects\shop\vendor\assets" />
       <recent name="C:\Users\rostyslav.kovtun\RubymineProjects\shop\lib\assets" />
       <recent name="C:\Users\rostyslav.kovtun\RubymineProjects\shop\app\assets\stylesheets\foundation_icons_general\sass" />
       <recent name="C:\Users\rostyslav.kovtun\RubymineProjects\shop\vendor\assets\stylesheets" />
-      <recent name="C:\Users\rostyslav.kovtun\RubymineProjects\shop\shop2\.openshift\action_hooks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ross\RubymineProjects\shop\lib\assets" />
+      <recent name="C:\Users\Ross\RubymineProjects\shop\public" />
       <recent name="C:\Users\rostyslav.kovtun\RubymineProjects\shop\app\views\line_items" />
       <recent name="C:\Users\rostyslav.kovtun\RubymineProjects\shop\app\views\items" />
       <recent name="C:\Users\rostyslav.kovtun\RubymineProjects\shop\app\views\carts" />
-      <recent name="C:\Users\rostyslav.kovtun\RubymineProjects\shop\test" />
-      <recent name="C:\Users\rostyslav.kovtun\RubymineProjects\shop\tmp" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: shop">
@@ -742,14 +785,14 @@
       <method />
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.db:setup" />
-      <item index="2" class="java.lang.String" itemvalue="IRB console.IRB console" />
-      <item index="3" class="java.lang.String" itemvalue="IRB console.Rails console: shop" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="6" class="java.lang.String" itemvalue="Rails.Production: shop" />
-      <item index="7" class="java.lang.String" itemvalue="Rails.Development: shop" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: shop" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: shop" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:setup" />
+      <item index="6" class="java.lang.String" itemvalue="IRB console.IRB console" />
+      <item index="7" class="java.lang.String" itemvalue="IRB console.Rails console: shop" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -865,12 +908,16 @@
       <created>1373839100783</created>
       <updated>1373839100783</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fixed mobile version">
+      <created>1373840916577</created>
+      <updated>1373840916577</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924226" sideWeight="0.65225744" order="3" side_tool="false" content_ui="tabs" />
@@ -882,7 +929,7 @@
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2145144" sideWeight="0.65292424" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2145144" sideWeight="0.65292424" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32564843" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -969,36 +1016,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/orders_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="100" selection-start="2229" selection-end="2229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="23" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.025954198">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="122" selection-start="1019" selection-end="1019" vertical-scroll-proportion="-20.26923">
-          <folding>
-            <marker date="1373819591793" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1373819591793" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1373819591793" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1373819591793" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1373819591793" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1373819591793" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1373819591793" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1373819591793" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/devise.en.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="27" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.0">
@@ -1055,15 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="708" selection-end="756" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/carts/_cart.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="29" selection-start="334" selection-end="334" vertical-scroll-proportion="-9.153846">
@@ -1078,17 +1086,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="72" selection-start="633" selection-end="633" vertical-scroll-proportion="-8.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.syncHeight.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="52" selection-start="5473" selection-end="5473" vertical-scroll-proportion="0.75935286">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="1564" selection-end="1564" vertical-scroll-proportion="-32.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="3" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.5359606">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

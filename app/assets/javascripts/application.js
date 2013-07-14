@@ -15,8 +15,19 @@
 //= require turbolinks
 //= require gritter
 //= require foundation
+//= require jquery.syncHeight.min
 //= require_tree .
 
 $(function() {
     $(document).foundation();
+});
+
+$(window).load(function(){
+    $('.synchH div.panel').syncHeight({ 'updateOnResize': true});
+});
+// and to undo the syncing again run (here when the window is smaller than 500px):
+$(window).resize(function(){
+    if($(window).width() < 500){
+        $('.synchH div.panel').unSyncHeight();
+    }
 });
