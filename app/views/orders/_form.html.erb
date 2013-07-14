@@ -1,35 +1,58 @@
 <%= form_for(@order) do |f| %>
-  <% if @order.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+    <% if @order.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
 
-      <ul>
-      <% @order.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+          <ul>
+            <% @order.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 
-    <div class="field" >
-      <%= f.label :name %><br />
-      <%= f.text_field :name, :size => 40 %>
+    <div class="field">
+
+
+
+      <%= f.label :name %>
+      <br/>
+      <%= f.text_field :name, :size => 40, :value => (user_signed_in?) ? current_user[:name] : '' %>
     </div>
-    <div class="field" >
-      <%= f.label :address %><br />
-      <%= f.text_area :address, :rows => 3, :cols => 40 %>
+    <div><%= f.label :surname %>
+      <br/>
+      <%= f.text_field :surname, :value => (user_signed_in?) ? current_user[:surname] : '' %></div>
+
+    <div><%= f.label :telephone %>
+      <br/>
+      <%= f.telephone_field :telephone, :value => (user_signed_in?) ? current_user[:telephone] : '' %></div>
+
+    <div><%= f.label :city %>
+      <br/>
+      <%= f.text_field :city, :value => (user_signed_in?) ? current_user[:city] : '' %></div>
+
+    <div class="field">
+      <%= f.label :address %>
+      <br/>
+      <%= f.text_field :address, :value => (user_signed_in?) ? current_user[:address] : '' %>
     </div>
-    <div class="field" >
-      <%= f.label :email %><br />
-      <%= f.email_field :email, :size => 40 %>
+    <div class="field">
+      <%= f.label :email %>
+      <br/>
+      <%= f.email_field :email, :size => 40, :value => (user_signed_in?) ? current_user[:email] : '' %>
     </div>
-    <div class="field" >
-      <%= f.label :pay_type %><br />
+    <div><%= f.label :delivery_type %>
+      <br/>
+      <%= f.select(:delivery_type, Order::DELIVERY_TYPES, :prompt => 'Select a delivery method') %>
+    </div>
+    <div class="field">
+      <%= f.label :pay_type %>
+      <br/>
       <%= f.select :pay_type, Order::PAYMENT_TYPES,
                    :prompt => 'Select a payment method' %>
     </div>
-    <div class="actions" >
-      <%= f.submit 'Place Order' %>
+    <div class="actions">
+      <%= f.submit 'Place Order', class: 'small button success radius' %>
     </div>
 
 <% end %>

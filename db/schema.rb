@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130711072608) do
+ActiveRecord::Schema.define(version: 20130714131100) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -76,6 +76,10 @@ ActiveRecord::Schema.define(version: 20130711072608) do
     t.string   "pay_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "surname"
+    t.string   "telephone"
+    t.string   "city"
+    t.string   "delivery_type"
   end
 
   create_table "users", force: true do |t|
@@ -92,6 +96,13 @@ ActiveRecord::Schema.define(version: 20130711072608) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "admin"
+    t.string   "name"
+    t.string   "surname"
+    t.string   "telephone"
+    t.string   "city"
+    t.string   "address"
+    t.string   "delivery_type"
+    t.string   "pay_type"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

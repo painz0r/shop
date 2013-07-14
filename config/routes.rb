@@ -14,7 +14,7 @@ Shop::Application.routes.draw do
 
   resources :items
 
-  resources :products do
+  resources :items do
     get :who_bought, :on => :member
   end
 

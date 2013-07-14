@@ -38,12 +38,52 @@ a:hover, a:focus {
 /*for gritter popup animation */
 .gritter-item.gritter-css3 {
   @extend .centered;
-  background: #2aa6ca;
-  color: white;
+  background: #2aa6ca !important;;
+  color: white !important;;
 }
 .gritter-title {
   margin-top: 15px;
 }
+
+/* from scaffolds.css.scss */
+#notice {
+  color: white;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+/* fix to FF and IE for thumbnails size */
+a.th {
+  max-width:100%
+}
+
 // Settings file to override Foundation variables
 
 // You can find the variables for each component at the bottom of their

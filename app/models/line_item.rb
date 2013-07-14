@@ -10,4 +10,9 @@ class LineItem < ActiveRecord::Base
   def item_quantity
     self.quantity
   end
+
+  def item_price
+    item.price
+  end
+
 end
