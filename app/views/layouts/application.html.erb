@@ -152,21 +152,22 @@
         </footer>
 
         <!-- End Footer -->
+
+        <!-- Checkout -->
+        <% if @cart %>
+            <div id="mycheckout" class="reveal-modal">
+              <div class="panel">
+                <h3 class="centered">Your Shopping Cart</h3>
+                </br>
+                <h5 class="subheader" id="cart">
+                  <%= render @cart %>
+                </h5>
+              </div>
+            </div>
+        <% end %>
+        <!--End of Checkout -->
+
     </div>
    </div>
-
-    <!-- Checkout -->
-    <% if @cart %>
-    <div id="mycheckout" class="reveal-modal medium">
-    <div class="panel">
-      <h3 class="centered">Your Shopping Cart</h3>
-      </br>
-      <h5 class="subheader" id="cart">
-        <%= render @cart %>
-      </h5>
-    </div>
-  </div>
-   <% end %>
-    <!--End of Checkout -->
   </body>
 </html>
