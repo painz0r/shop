@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="small-2 columns">
+  <div class="small-6 large-3 small-centered columns">
     <a class="th radius" href="<%= item_path(line_item.item_id) %>">
       <img src="http://placehold.it/1000x1000&text=Thumbnail">
     </a>
@@ -7,17 +7,17 @@
   <div class="row">
     <div class="item-margin">
       <% if line_item == @current_item %>
-          <div class="small-4 large-offset-1 columns" id="current_item">
+          <div class="large-4 small-12 large-offset-1 columns" id="current_item">
       <% else %>
-          <div class="small-4 large-offset-1 columns">
+          <div class="large-4 small-12 large-offset-1 columns">
       <% end %>
       <%= line_item.quantity %> &times; <%= link_to line_item.item.title, item_path(line_item.item_id) %>
       </div>
-      <div class="small-1 column">
+      <div class="large-1 small-1 column">
         <%= number_to_currency(line_item.quantity * line_item.item_price) %>
       </div>
 
-      <div class="large-3 columns">
+      <div class="large-3 small-5 columns">
         <%= button_to 'Remove', line_item, :method => :delete, class: 'tiny button round', data: {confirm: 'Are you sure?'}, :remote => true %>
       </div>
     </div>

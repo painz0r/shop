@@ -16,14 +16,14 @@
   	<title><%= content_for?(:title) ? yield(:title) : "My Shop" %></title>
 
   	<%= stylesheet_link_tag    "application" %>
-  	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= javascript_include_tag "application" %>
+  	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
     <div class="row">
-      <div class="large-12 columns">
+      <div class="large-12 small-12 columns">
 
         <!-- Navigation -->
 
@@ -92,6 +92,9 @@
             <!-- End Top Bar -->
           </div>
         </div>
+
+        <!-- End Navigation -->
+
         <% if flash[:notice] %>
           <div data-alert id="notice" class="hidden alert-box success radius">
             <%= notice %>
@@ -150,12 +153,12 @@
 
         <!-- End Footer -->
     </div>
-    </div>
+   </div>
 
     <!-- Checkout -->
     <% if @cart %>
     <div id="mycheckout" class="reveal-modal medium">
-    <div class="hide-for-small panel">
+    <div class="panel">
       <h3 class="centered">Your Shopping Cart</h3>
       </br>
       <h5 class="subheader" id="cart">

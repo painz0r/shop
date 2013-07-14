@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
 //= require turbolinks
 //= require gritter
+//= require foundation
 //= require_tree .
 
-$(document).foundation();
+$(function() {
+    $(document).foundation();
+});

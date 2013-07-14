@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="small-4 columns">
+  <div class="small-5 large-4 columns">
     <a href="#" data-reveal-id="mycheckout">
       <div class="panel callout radius">
         <h6 id="checkout" class="centered blink">
@@ -8,7 +8,7 @@
       </div>
     </a>
   </div>
-  <div class="small-2 small-offset-6 columns">
+  <div class="large-2 small-3 large-offset-6 small-offset-4 columns">
     <%= render 'devise/menu/login_items' %>
   </div>
 </div>
@@ -23,7 +23,7 @@
   </div>
 
   <!-- End Side Bar -->
-  <div class="large-8 columns">
+  <div class="large-8 small-12 columns">
     <div class="row">
       <% @items.each do |item| %>
           <div class="large-4 small-6 columns">
@@ -35,12 +35,10 @@
               <h5><%= link_to item.title, item_path(item) %></h5>
               <h6 class="subheader"><%= number_to_currency(item.price) %></h6>
               <%= button_to 'Add to Cart', line_items_path(:item_id => item), :class => 'button small radius', :remote => true %>
-              <%= link_to 'Edit', edit_item_path(item) %>
-              <%= link_to 'Destroy', item, method: :delete, data: {confirm: 'Are you sure?'} %>
             </div>
           </div>
       <% end %>
-      <div class="large-12 columns">
+      <div class="large-12 small-12 columns">
         <li><%= link_to 'New Item', new_item_path %></li>
         <ul class="inline-list right">
           <ul class="pagination">
