@@ -1,4 +1,5 @@
 class OrdersController < InheritedResources::Base
+  skip_before_filter :authenticate_admin_user!, :only => [:new, :create, :show]
 
   def new
     @cart = current_cart

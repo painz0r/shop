@@ -1,14 +1,21 @@
 class ApplicationController < ActionController::Base
   before_filter :configure_permitted_parameters, if: :devise_controller?
+  before_filter :authenticate_admin_user!
   after_filter :store_location
 
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-
+  rescue_from SecurityError do |exception|
+    redirect_to root_path, notice: 'I\'m sorry, only admins can access this page'
+  end
 
   protected
+
+  def authenticate_admin_user!
+    raise SecurityError unless current_user.try(:admin?)
+  end
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:email, :password, :password_confirmation, :name, :surname, :address, :telephone, :delivery_type, :pay_type, :city) }

@@ -24,4 +24,10 @@ class Notifier < ActionMailer::Base
     @order = order
     mail :to => order.email, :subject => 'Pragmatic Store Order Shipped'
   end
+
+  def registration_confirmation(user)
+    @user = user
+    mail(:to => "#{user.name} <#{user.email}>", :subject => "Registered")
+  end
+
 end

@@ -11,23 +11,32 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
+//= require jquery.syncHeight.min
 //= require gritter
 //= require foundation
-//= require jquery.syncHeight.min
+//= require turbolinks
 //= require_tree .
 
-$(function() {
+$(function () {
     $(document).foundation();
 });
 
-$(window).load(function(){
-    $('.synchH div.panel').syncHeight({ 'updateOnResize': true});
+$(window).load(function () {
+    $('.synchH div.panel .itemTitle').syncHeight({ 'updateOnResize': true});
 });
-// and to undo the syncing again run (here when the window is smaller than 500px):
-$(window).resize(function(){
-    if($(window).width() < 500){
-        $('.synchH div.panel').unSyncHeight();
+
+$(window).on('page:before-change',function () {
+    $('.synchH div.panel .itemTitle').syncHeight({ 'updateOnResize': true});
+});
+
+$(window).on('page:load',function () {
+    $('.synchH div.panel .itemTitle').syncHeight({ 'updateOnResize': true});
+});
+//and to undo the syncing again run (here when the window is smaller than 500px):
+$(window).resize(function () {
+    if ($(window).width() < 500) {
+        $('.synchH div.panel .itemTitle').unSyncHeight();
     }
 });

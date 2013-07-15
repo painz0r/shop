@@ -32,12 +32,12 @@ gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-
+gem 'jquery-turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
 #foundation gems
-gem 'compass-rails' # you need this or you get an err
+gem 'compass-rails', github: "milgner/compass-rails", ref: "1749c06f15dc4b058427e7969810457213647fb8" # you need this or you get an err
 gem 'zurb-foundation', '~> 4.0.0'
 
 group :doc do

@@ -5,6 +5,6 @@ $ ->
 
 closeHelpDiv = ->
   $("#alert, #notice").click()
-window.setTimeout closeHelpDiv, 15000
+window.setTimeout closeHelpDiv, 10000
 
 

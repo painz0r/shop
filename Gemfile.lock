@@ -43,14 +43,22 @@ GIT
       actionpack (>= 3.0)
 
 GIT
-  remote: git://github.com/plataformatec/devise.git
-  revision: fed6a92d552116284c9a2be82c8aa899f774b463
+  remote: git://github.com/milgner/compass-rails.git
+  revision: 1749c06f15dc4b058427e7969810457213647fb8
+  ref: 1749c06f15dc4b058427e7969810457213647fb8
   specs:
-    devise (3.0.0.rc)
+    compass-rails (1.0.3)
+      compass (>= 0.12.2, < 0.14)
+
+GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: b46b7e37360413e6a9faf43df76ffc6f6e749058
+  specs:
+    devise (3.0.0)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
-      warden (~> 1.2.2)
+      warden (~> 1.2.3)
 
 GIT
   remote: git://github.com/plataformatec/responders.git
@@ -126,8 +134,6 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    compass-rails (1.0.3)
-      compass (>= 0.12.2, < 0.14)
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (1.4.0)
@@ -148,6 +154,9 @@ GEM
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-turbolinks (1.0.0)
+      railties (>= 3.1.0)
+      turbolinks
     jquery-ui-rails (4.0.3)
       jquery-rails
       railties (>= 3.1.0)
@@ -226,7 +235,7 @@ GEM
     uglifier (2.1.2)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    warden (1.2.2)
+    warden (1.2.3)
       rack (>= 1.0)
     will_paginate (3.0.4)
     zurb-foundation (4.0.9)
@@ -243,7 +252,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   coffee-rails (~> 4.0.0)
-  compass-rails
+  compass-rails!
   devise!
   figaro
   formtastic!
@@ -251,6 +260,7 @@ DEPENDENCIES
   inherited_resources!
   jbuilder (~> 1.2)
   jquery-rails
+  jquery-turbolinks
   meta_request
   mysql2 (~> 0.3.11)
   rails (= 4.0.0)

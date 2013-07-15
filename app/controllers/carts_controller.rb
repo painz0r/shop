@@ -1,4 +1,5 @@
 class CartsController < InheritedResources::Base
+  skip_before_filter :authenticate_admin_user!, :only => [:destroy]
 
   def show
     begin

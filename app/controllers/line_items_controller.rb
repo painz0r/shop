@@ -1,4 +1,5 @@
 class LineItemsController < InheritedResources::Base
+  skip_before_filter :authenticate_admin_user!, :only => [:create]
 
   def create
     @addMessage = 'Item added to your cart'
