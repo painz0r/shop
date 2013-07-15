@@ -12,7 +12,7 @@
       Total <%= number_to_currency(@cart.total_price) %>
     </div>
   </h4>
-  <div class="large-3 small-5 columns">
+  <div class="large-3 small-6 columns">
     <%= button_to 'Empty Cart', @cart, :method => :delete, class: 'small button radius', data: {confirm: 'Are you sure?'}, :remote => true %>
   </div>
   <div class="large-4 small-12 columns">

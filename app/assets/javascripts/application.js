@@ -27,13 +27,15 @@ $(window).load(function () {
     $('.synchH div.panel .itemTitle').syncHeight({ 'updateOnResize': true});
 });
 
-$(window).on('page:before-change',function () {
+$(window).on('page:change',function () {
     $('.synchH div.panel .itemTitle').syncHeight({ 'updateOnResize': true});
 });
 
 $(window).on('page:load',function () {
     $('.synchH div.panel .itemTitle').syncHeight({ 'updateOnResize': true});
 });
+
+
 //and to undo the syncing again run (here when the window is smaller than 500px):
 $(window).resize(function () {
     if ($(window).width() < 500) {
