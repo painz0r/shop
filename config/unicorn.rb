@@ -9,6 +9,3 @@ listen "/tmp/unicorn.shop-2.sock"
 worker_processes 2
 timeout 30
 
-before_exec do |server|
-  ENV['BUNDLE_GEMFILE'] = '/mnt/Hipstaweb-<%= RUBBER_ENV %>/current/Gemfile'
-end
