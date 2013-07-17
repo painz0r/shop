@@ -1,21 +1,12 @@
 #!/bin/sh
-### BEGIN INIT INFO
-# Provides: unicorn
-# Required-Start: $remote_fs $syslog
-# Required-Stop: $remote_fs $syslog
-# Default-Start: 2 3 4 5
-# Default-Stop: 0 1 6
-# Short-Description: Manage unicorn server
-# Description: Start, stop, restart unicorn server for a specific application.
-### END INIT INFO
 set -e
 
 # Feel free to change any of the following variables for your app:
 TIMEOUT=${TIMEOUT-60}
-APP_ROOT=/home/deployer/apps/<app_name>/current
+APP_ROOT=/home/mrhuman/apps/YOUR_APP_NAME/current
 PID=$APP_ROOT/tmp/pids/unicorn.pid
 CMD="cd $APP_ROOT; bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
-AS_USER=<user>
+AS_USER=mrhuman
 set -u
 
 OLD_PIN="$PID.oldbin"
@@ -30,9 +21,9 @@ oldsig () {
 
 run () {
   if [ "$(id -un)" = "$AS_USER" ]; then
-eval $1
+    eval $1
   else
-su -c "$1" - $AS_USER
+    su -c "$1" - $AS_USER
   fi
 }
 
@@ -49,29 +40,35 @@ force-stop)
   sig TERM && exit 0
   echo >&2 "Not running"
   ;;
-restart|reload)
-  sig HUP && echo reloaded OK && exit 0
-  echo >&2 "Couldn't reload, starting '$CMD' instead"
-  run "$CMD"
-  ;;
+#restart|reload)
+  #sig HUP && echo reloaded OK && exit 0
+  #echo >&2 "Couldn't reload, starting '$CMD' instead"
+ # run "$CMD"
+ # ;;
+ restart|reload)
+sig USR2 && echo reloaded OK && exit 0
+echo >&2 "Couldn't reload, starting '$CMD' instead"
+run "$CMD"
+;;
+
 upgrade)
   if sig USR2 && sleep 2 && sig 0 && oldsig QUIT
   then
-n=$TIMEOUT
+    n=$TIMEOUT
     while test -s $OLD_PIN && test $n -ge 0
     do
-printf '.' && sleep 1 && n=$(( $n - 1 ))
+      printf '.' && sleep 1 && n=$(( $n - 1 ))
     done
-echo
+    echo
 
-if test $n -lt 0 && test -s $OLD_PIN
+    if test $n -lt 0 && test -s $OLD_PIN
     then
-echo >&2 "$OLD_PIN still exists after $TIMEOUT seconds"
+      echo >&2 "$OLD_PIN still exists after $TIMEOUT seconds"
       exit 1
     fi
-exit 0
+    exit 0
   fi
-echo >&2 "Couldn't upgrade, starting '$CMD' instead"
+  echo >&2 "Couldn't upgrade, starting '$CMD' instead"
   run "$CMD"
   ;;
 reopen-logs)
