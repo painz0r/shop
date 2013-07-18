@@ -76,7 +76,7 @@ gem 'gritter'
 
 # Use unicorn as the app server
 #gem 'unicorn'
-platforms :ruby do # linux
+group :production do # linux
   gem 'unicorn'
 end
 # Use Capistrano for deployment
