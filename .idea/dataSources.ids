@@ -3,8 +3,8 @@
   <data-source source="LOCAL" name="Rails shop: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="2282de1a-f678-4bab-b2c3-b029fcc5283f">
     <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
     <jdbc-url>jdbc:mysql://127.0.0.1/shop_test</jdbc-url>
-    <user-name>root</user-name>
-    <user-password>dfcfdfc4dfdedfcfdfd8dfdadfd8dfc3dfd9dfcf</user-password>
+    <user-name>&lt;%= ENV[&quot;MYSQL_USERNAME&quot;] %&gt;</user-name>
+    <user-password>df96df8fdf97df8adfefdfe4dffcdff1df88dfe7dff3dff9dffbdfe6dff5dffadfebdff9dff9dffddfe5dff8dfeedf88dff7df8adf8fdf94</user-password>
     <libraries>
       <library>
         <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
@@ -1840,9 +1840,9 @@
       <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <column name="namespace" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <index name="index_active_admin_comments_on_resource_type_and_resource_id" unique="false" columns="resource_type,resource_id"/>
-      <index name="index_active_admin_comments_on_namespace" unique="false" columns="namespace"/>
       <index name="index_active_admin_comments_on_author_type_and_author_id" unique="false" columns="author_type,author_id"/>
+      <index name="index_active_admin_comments_on_namespace" unique="false" columns="namespace"/>
+      <index name="index_active_admin_comments_on_resource_type_and_resource_id" unique="false" columns="resource_type,resource_id"/>
     </table>
     <table name="admin_users" schema="" catalog="shop" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -1943,8 +1943,8 @@
   <data-source source="LOCAL" name="Rails shop: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="fc7817db-505c-4703-ad36-1f828423dd79">
     <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
     <jdbc-url>jdbc:mysql://127.0.0.1/shop_production</jdbc-url>
-    <user-name>root</user-name>
-    <user-password>dfcfdfc4dfdedfcfdfd8dfdadfd8dfc3dfd9dfcf</user-password>
+    <user-name>&lt;%= ENV[&quot;MYSQL_USERNAME&quot;] %&gt;</user-name>
+    <user-password>df96df8fdf97df8adfefdfe4dffcdff1df88dfe7dff3dff9dffbdfe6dff5dffadfebdff9dff9dffddfe5dff8dfeedf88dff7df8adf8fdf94</user-password>
     <libraries>
       <library>
         <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
