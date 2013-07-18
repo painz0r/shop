@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55f3d95-17f0-4a7f-900b-ca6586218e49" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/unicorn.rb" afterPath="$PROJECT_DIR$/config/unicorn.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/unicorn_init.sh" afterPath="$PROJECT_DIR$/config/unicorn_init.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374094025417" ignored="false" />
+    <file path="/Dummy.txt" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374094456217" ignored="false" />
     <file path="/a.dummy" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373803427081" ignored="false" />
     <file path="/Ruby Console" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373738515085" ignored="false" />
     <file path="/application.yml" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373643616509" ignored="false" />
@@ -42,10 +44,10 @@
     <file path="/application.html.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373842138139" ignored="false" />
     <file path="/devise.en.yml" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373819474214" ignored="false" />
     <file path="/application.js" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373915250080" ignored="false" />
-    <file path="/deploy.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374093782741" ignored="false" />
+    <file path="/deploy.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374178339535" ignored="false" />
     <file path="/nginx.conf" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374013595926" ignored="false" />
-    <file path="/unicorn.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374093772137" ignored="false" />
-    <file path="/unicorn_init.sh" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374093740414" ignored="false" />
+    <file path="/unicorn.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374178158807" ignored="false" />
+    <file path="/unicorn_init.sh" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374178210649" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +72,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="96" selection-start="857" selection-end="857" vertical-scroll-proportion="-0.65384614">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_registration_items.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/menu/_registration_items.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -133,19 +126,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unicorn.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="unicorn.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="3" selection-start="385" selection-end="385" vertical-scroll-proportion="0.3264402">
+            <state line="10" column="32" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unicorn_init.sh" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="unicorn_init.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+            <state line="8" column="29" selection-start="154" selection-end="154" vertical-scroll-proportion="0.20088626">
               <folding />
             </state>
           </provider>
@@ -154,7 +147,16 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
+            <state line="19" column="50" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="16" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -189,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/flash.coffee" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/items/index.html.erb" />
@@ -202,8 +203,9 @@
         <option value="$PROJECT_DIR$/config/unicorn_ini.sh" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/nginx.conf" />
-        <option value="$PROJECT_DIR$/config/unicorn_init.sh" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
+        <option value="$PROJECT_DIR$/config/unicorn_init.sh" />
         <option value="$PROJECT_DIR$/config/unicorn.rb" />
       </list>
     </option>
@@ -685,7 +687,7 @@
       <recent name="C:\Users\Ross\RubymineProjects\shop\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: shop">
+  <component name="RunManager" selected="Bash.unicorn_init.sh">
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="shop" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -770,6 +772,19 @@
       <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="unicorn_init.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/config" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="shop" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config/unicorn_init.sh" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="BashRunner" />
+      <ConfigurationWrapper RunnerId="BashRunner" />
       <method />
     </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -1014,7 +1029,7 @@
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <method />
     </configuration>
-    <list size="8">
+    <list size="9">
       <item index="0" class="java.lang.String" itemvalue="Rake.test" />
       <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: shop" />
@@ -1023,14 +1038,15 @@
       <item index="5" class="java.lang.String" itemvalue="Rake.db:setup" />
       <item index="6" class="java.lang.String" itemvalue="IRB console.IRB console" />
       <item index="7" class="java.lang.String" itemvalue="IRB console.Rails console: shop" />
+      <item index="8" class="java.lang.String" itemvalue="Bash.unicorn_init.sh" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
-        <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: shop" />
-        <item index="2" class="java.lang.String" itemvalue="IRB console.IRB console" />
-        <item index="3" class="java.lang.String" itemvalue="Rake.db:setup" />
-        <item index="4" class="java.lang.String" itemvalue="IRB console.Rails console: shop" />
+        <item index="0" class="java.lang.String" itemvalue="Bash.unicorn_init.sh" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: shop" />
+        <item index="3" class="java.lang.String" itemvalue="IRB console.IRB console" />
+        <item index="4" class="java.lang.String" itemvalue="Rake.db:setup" />
       </list>
     </recent_temporary>
   </component>
@@ -1182,7 +1198,11 @@
       <created>1374094030581</created>
       <updated>1374094030581</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added capistrano and unicorn test">
+      <created>1374094460175</created>
+      <updated>1374094460175</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1288,13 +1308,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="96" selection-start="857" selection-end="857" vertical-scroll-proportion="-0.65384614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/cart.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" />
@@ -1379,23 +1392,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+        <state line="22" column="16" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
+        <state line="19" column="50" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="385" selection-end="385" vertical-scroll-proportion="0.3264402">
+        <state line="10" column="32" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="29" selection-start="154" selection-end="154" vertical-scroll-proportion="0.20088626">
           <folding />
         </state>
       </provider>
