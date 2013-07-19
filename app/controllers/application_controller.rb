@@ -31,15 +31,25 @@ class ApplicationController < ActionController::Base
 
   def store_location
     # store last url as long as it isn't a /users path
-    session[:previous_url] = request.fullpath unless request.fullpath =~ /\/users/
+
+      session[:previous_url] = request.fullpath unless request.fullpath =~ /\/users/ || request.fullpath =~ /\/admin/
+
   end
 
   def after_sign_in_path_for(resource)
+    unless request.fullpath =~ /\/admin/
     session[:previous_url] || root_path
+    else
+      super
+    end
   end
 
   def after_sign_out_path_for(resource)
-    session[:previous_url] || root_path
+    unless request.fullpath =~ /\/admin/
+      session[:previous_url] || root_path
+    else
+      super
+    end
   end
 
 end
