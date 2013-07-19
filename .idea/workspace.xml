@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55f3d95-17f0-4a7f-900b-ca6586218e49" name="Default" comment="added capistrano and unicorn test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/unicorn/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/shop.iml" afterPath="$PROJECT_DIR$/.idea/shop.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/unicorn_init.sh" afterPath="$PROJECT_DIR$/config/unicorn_init.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/nginx.conf" />
+      <change type="DELETED" beforePath="C:\Users\Ross\RubymineProjects\shop\app\controllers\sessions_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ross\RubymineProjects\shop\config\unicorn\production.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/unicorn.rb" afterPath="$PROJECT_DIR$/config/unicorn.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374254310108" ignored="false" />
+    <file path="/Dummy.txt" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374256199884" ignored="false" />
     <file path="/a.dummy" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373803427081" ignored="false" />
     <file path="/Ruby Console" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373738515085" ignored="false" />
     <file path="/application.yml" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373643616509" ignored="false" />
@@ -48,11 +45,11 @@
     <file path="/application.html.erb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373842138139" ignored="false" />
     <file path="/devise.en.yml" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373819474214" ignored="false" />
     <file path="/application.js" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373915250080" ignored="false" />
-    <file path="/deploy.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374253968357" ignored="false" />
-    <file path="/nginx.conf" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374180691657" ignored="false" />
+    <file path="/deploy.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374254548263" ignored="false" />
+    <file path="/nginx.conf" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374261814006" ignored="false" />
     <file path="/unicorn.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374178158807" ignored="false" />
     <file path="/unicorn_init.sh" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374190427453" ignored="false" />
-    <file path="/production.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374254285283" ignored="false" />
+    <file path="/production.rb" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374260115930" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,16 +77,7 @@
       <file leaf-file-name="_registration_items.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/menu/_registration_items.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="79" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_cart.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/carts/_cart.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+            <state line="3" column="79" selection-start="217" selection-end="217" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -107,16 +95,16 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="20" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.0">
+            <state line="60" column="106" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile.lock" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="272" column="2" selection-start="6541" selection-end="6541" vertical-scroll-proportion="0.0">
+            <state line="46" column="18" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,7 +113,7 @@
       <file leaf-file-name="unicorn.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="36" selection-start="8" selection-end="36" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,25 +131,25 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="28" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
+            <state line="31" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/unicorn/production.rb">
+      <file leaf-file-name="nginx.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="32" selection-start="490" selection-end="490" vertical-scroll-proportion="0.30088496">
+            <state line="16" column="48" selection-start="550" selection-end="569" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="37" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
+            <state line="25" column="37" selection-start="597" selection-end="597" vertical-scroll-proportion="0.648855">
               <folding />
             </state>
           </provider>
@@ -196,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/items/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/carts/_cart.erb" />
@@ -205,13 +192,14 @@
         <option value="dbtable:/cfc8505/f6d82dae-069d-4890-9b4a-c8efebc1538f/shop..carts" />
         <option value="dbtable:/cfc8505/f6d82dae-069d-4890-9b4a-c8efebc1538f/shop..users" />
         <option value="$PROJECT_DIR$/config/unicorn_ini.sh" />
-        <option value="$PROJECT_DIR$/config/unicorn.rb" />
-        <option value="$PROJECT_DIR$/config/nginx.conf" />
         <option value="$PROJECT_DIR$/config/unicorn_init.sh" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/config/unicorn/production.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/nginx.conf" />
+        <option value="$PROJECT_DIR$/config/deploy.rb" />
+        <option value="$PROJECT_DIR$/config/unicorn.rb" />
       </list>
     </option>
   </component>
@@ -297,24 +285,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unicorn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -710,7 +680,7 @@
       <recent name="C:\Users\Ross\RubymineProjects\shop\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Bash.unicorn_init.sh">
+  <component name="RunManager" selected="Rails.Development: shop">
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="shop" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -1065,8 +1035,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Bash.unicorn_init.sh" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="1" class="java.lang.String" itemvalue="Bash.unicorn_init.sh" />
         <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: shop" />
         <item index="3" class="java.lang.String" itemvalue="IRB console.IRB console" />
         <item index="4" class="java.lang.String" itemvalue="Rake.db:setup" />
@@ -1241,7 +1211,11 @@
       <created>1374182899696</created>
       <updated>1374182899696</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="added capistrano and unicorn test">
+      <created>1374254438168</created>
+      <updated>1374254438168</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1250,16 +1224,17 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924226" sideWeight="0.6541787" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34582132" sideWeight="0.7006403" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34582132" sideWeight="0.7006403" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3470716" sideWeight="0.29935965" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33525455" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32564843" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22411953" sideWeight="0.6762728" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22411953" sideWeight="0.6541787" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3237272" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3237272" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Routes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6529284" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1267,7 +1242,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275488" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32564843" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1347,21 +1321,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/cart.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/carts/_cart.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/menu/_registration_items.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="79" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+        <state line="3" column="79" selection-start="217" selection-end="217" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
@@ -1415,6 +1377,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="229" selection-end="229" vertical-scroll-proportion="0.41526717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="106" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="18" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="137" selection-end="138" vertical-scroll-proportion="0.0">
@@ -1422,37 +1405,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="20" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="37" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="28" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
+        <state line="31" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
+    <entry file="file://$PROJECT_DIR$/config/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="36" selection-start="8" selection-end="36" vertical-scroll-proportion="0.0">
+        <state line="16" column="48" selection-start="550" selection-end="569" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/unicorn/production.rb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="490" selection-end="490" vertical-scroll-proportion="0.30088496">
+        <state line="25" column="37" selection-start="597" selection-end="597" vertical-scroll-proportion="0.648855">
           <folding />
         </state>
       </provider>
