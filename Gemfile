@@ -75,10 +75,12 @@ gem 'figaro'
 gem 'gritter'
 
 # Use unicorn as the app server
-# gem 'unicorn'
-
+#gem 'unicorn'
+group :production do # linux
+  gem 'unicorn'
+end
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+ gem 'capistrano'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

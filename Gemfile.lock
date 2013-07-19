@@ -121,6 +121,12 @@ GEM
       thor
     builder (3.1.4)
     callsite (0.0.11)
+    capistrano (2.15.5)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     chunky_png (1.2.8)
     coderay (1.0.9)
     coffee-rails (4.0.0)
@@ -146,6 +152,7 @@ GEM
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
+    highline (1.6.19)
     hike (1.2.3)
     i18n (0.6.4)
     jbuilder (1.4.2)
@@ -178,6 +185,13 @@ GEM
     multi_json (1.7.7)
     mysql2 (0.3.11)
     mysql2 (0.3.11-x86-mingw32)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.6.8)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
     nokogiri (1.5.10)
     nokogiri (1.5.10-x86-mingw32)
     orm_adapter (0.4.0)
@@ -251,6 +265,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   better_errors
   binding_of_caller
+  capistrano
   coffee-rails (~> 4.0.0)
   compass-rails!
   devise!
@@ -270,5 +285,6 @@ DEPENDENCIES
   sdoc
   turbolinks
   uglifier (>= 1.3.0)
+  unicorn
   will_paginate
   zurb-foundation (~> 4.0.0)

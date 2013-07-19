@@ -17,7 +17,7 @@
         <%= number_to_currency(line_item.quantity * line_item.item_price) %>
       </div>
 
-      <div class="large-3 small-4 columns">
+      <div class="large-3 small-5 columns">
         <%= button_to 'Remove', line_item, :method => :delete, class: 'tiny button round', data: {confirm: 'Are you sure?'}, :remote => true %>
       </div>
     </div>
