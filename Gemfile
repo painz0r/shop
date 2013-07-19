@@ -78,7 +78,6 @@ gem 'gritter'
 #gem 'unicorn'
 group :production do # linux
   gem 'unicorn'
-  gem 'unicorn-rails'
 end
 
 # Use Capistrano for deployment
