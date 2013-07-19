@@ -10,6 +10,10 @@
 </table>
 <p>
   <%= link_to 'Back', @category.parent.nil? ? categories_path : category_path(@category.parent) unless @category.nil? %>
-  <%= link_to 'New (sub-category)', new_category_path(@category) %>
+  <% unless @category.nil? %>
+    <%= link_to 'New (sub-category)', new_category_path(@category) %>
+  <% else %>
+    <%= link_to 'New Category', new_category_path(@category) %>
+  <% end %>
 </p>
 

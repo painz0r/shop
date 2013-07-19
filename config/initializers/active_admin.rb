@@ -84,7 +84,7 @@ ActiveAdmin.setup do |config|
   # link. For example :get, :delete, :put, etc..
   #
   # Default:
-  # config.logout_link_method = :get
+   config.logout_link_method = :delete
 
 
   # == Root
@@ -123,7 +123,6 @@ ActiveAdmin.setup do |config|
   # Active Admin resources and pages from here.
   #
   # config.before_filter :do_something_awesome
-
 
   # == Register Stylesheets & Javascripts
   #

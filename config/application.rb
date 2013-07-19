@@ -11,9 +11,7 @@ module Shop
 
     config.filter_parameters += [:password, :password_confirmation]
 
-    config.to_prepare do
-      DeviseController.skip_before_filter :authenticate_admin_user!
-    end
+
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

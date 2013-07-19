@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130717095813) do
+ActiveRecord::Schema.define(version: 20130719135148) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 20130717095813) do
     t.integer  "parent_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "item_id"
   end
 
   add_index "categories", ["parent_id"], name: "index_categories_on_parent_id", using: :btree
@@ -67,6 +68,7 @@ ActiveRecord::Schema.define(version: 20130717095813) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_url"
+    t.integer  "category_id"
   end
 
   create_table "line_items", force: true do |t|

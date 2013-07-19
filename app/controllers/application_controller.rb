@@ -13,9 +13,6 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  def authenticate_admin_user!
-    raise SecurityError unless current_user.try(:admin?)
-  end
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:email, :password, :password_confirmation, :name, :surname, :address, :telephone, :delivery_type, :pay_type, :city) }
