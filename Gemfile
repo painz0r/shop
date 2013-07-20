@@ -78,13 +78,13 @@ gem 'gritter'
 #gem 'unicorn'
 group :production do # linux
   gem 'unicorn'
-  gem 'capistrano-nginx-unicorn'
-  gem "unicorn-rails"
+
+  gem 'unicorn-rails'
 end
 
 # Use Capistrano for deployment
  gem 'capistrano'
- gem 'capistrano-unicorn'
+ gem 'capistrano-ext'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
