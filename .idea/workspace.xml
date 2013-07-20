@@ -7,7 +7,7 @@
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374358791501" ignored="false" />
+    <file path="/Dummy.txt" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1374359291907" ignored="false" />
     <file path="/a.dummy" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373803427081" ignored="false" />
     <file path="/Ruby Console" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373738515085" ignored="false" />
     <file path="/application.yml" changelist="e55f3d95-17f0-4a7f-900b-ca6586218e49" time="1373643616509" ignored="false" />
@@ -102,7 +102,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="30" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.50961536">
+            <state line="61" column="2" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.83653843">
               <folding />
             </state>
           </provider>
@@ -1281,7 +1281,11 @@
       <created>1374358798697</created>
       <updated>1374358798697</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="added capistrano and unicorn test">
+      <created>1374359296538</created>
+      <updated>1374359296538</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1488,7 +1492,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="30" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.50961536">
+        <state line="61" column="2" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.83653843">
           <folding />
         </state>
       </provider>
