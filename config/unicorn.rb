@@ -4,7 +4,7 @@ pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
 stdout_path "#{root}/log/unicorn.log"
 
-# change the YOUR_APP_NAME to your application name
+
 listen "/tmp/unicorn.shop.sock"
 worker_processes 2
 timeout 30
@@ -15,11 +15,11 @@ before_exec do |server|
 end
 
 before_fork do |server, worker|
-  # Перед тем, как создать первый рабочий процесс, мастер отсоединяется от базы.
+
   defined?(ActiveRecord::Base) and
       ActiveRecord::Base.connection.disconnect!
 
-  # Ниже идет магия, связанная с 0 downtime deploy.
+
   if File.exists?(old_pid) && server.pid != old_pid
     begin
       Process.kill("QUIT", File.read(old_pid).to_i)
@@ -30,7 +30,7 @@ before_fork do |server, worker|
 end
 
 after_fork do |server, worker|
-  # После того как рабочий процесс создан, он устанавливает соединение с базой.
+
   defined?(ActiveRecord::Base) and
       ActiveRecord::Base.establish_connection
 end

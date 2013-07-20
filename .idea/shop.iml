@@ -40,6 +40,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.4, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="callsite (v0.0.11, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capistrano (v2.15.5, ruby-1.9.3-p392 (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capistrano-nginx-unicorn (v0.0.6, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capistrano-unicorn (v0.1.9, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="chunky_png (v1.2.8, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coderay (v1.0.9, ruby-1.9.3-p392 (1)) [gem]" level="application" />
