@@ -5,7 +5,7 @@ stderr_path "#{root}/log/unicorn.log"
 stdout_path "#{root}/log/unicorn.log"
 
 
-listen "127.0.0.1:8080"
+listen "#{root}/tmp/unicorn.shop.sock"
 worker_processes 2
 timeout 30
 preload_app true
