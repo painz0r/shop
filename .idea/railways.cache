@@ -64,6 +64,15 @@ batch_action_admin_admin_users POST       /admin/admin_users/batch_action(.:form
                                PATCH      /admin/admin_users/:id(.:format)          admin/admin_users#update
                                PUT        /admin/admin_users/:id(.:format)          admin/admin_users#update
                                DELETE     /admin/admin_users/:id(.:format)          admin/admin_users#destroy
+ batch_action_admin_categories POST       /admin/categories/batch_action(.:format)  admin/categories#batch_action
+              admin_categories GET        /admin/categories(.:format)               admin/categories#index
+                               POST       /admin/categories(.:format)               admin/categories#create
+            new_admin_category GET        /admin/categories/new(.:format)           admin/categories#new
+           edit_admin_category GET        /admin/categories/:id/edit(.:format)      admin/categories#edit
+                admin_category GET        /admin/categories/:id(.:format)           admin/categories#show
+                               PATCH      /admin/categories/:id(.:format)           admin/categories#update
+                               PUT        /admin/categories/:id(.:format)           admin/categories#update
+                               DELETE     /admin/categories/:id(.:format)           admin/categories#destroy
                admin_dashboard GET        /admin/dashboard(.:format)                admin/dashboard#index
       batch_action_admin_items POST       /admin/items/batch_action(.:format)       admin/items#batch_action
                    admin_items GET        /admin/items(.:format)                    admin/items#index
